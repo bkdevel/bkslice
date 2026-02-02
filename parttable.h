@@ -1,7 +1,7 @@
 /*
  * SPDX-License Identifier: BSD 0-Clause
  *
- * Copyright (c) 20256 bkdevel
+ * Copyright (c) 2026 bkdevel
  * All rights reserved.
  *
  * Permission to use, copy, modify, and/or distribute this software for any 
