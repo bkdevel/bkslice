@@ -19,7 +19,8 @@ make
 
 For installing: 
 
-```sh as root
+as root:
+```sh
 make install
 ```
 
