@@ -31,13 +31,18 @@
 
 BUILD = .
 CFLAGS = -Wall -Wextra -pedantic -std=c99
+PREFIX = /usr/local
+INSTALL = bin/bkslice
 
 
 .PHONY: all clean
 
-all: $(BUILD)/bkslice
+main: $(BUILD)/bkslice
 $(BUILD)/bkslice:
 	$(CC) $(CFLAGS) ./common.c ./bkslice.c -o $(BUILD)/bkslice
 
 clean:
 	rm -rf $(BUILD)/bkslice
+
+install: main
+	cp $(BUILD)/bkslice $(PREFIX)/$(INSTALL)
