@@ -46,7 +46,7 @@ typedef struct
                                  */
     uint16_t sectorSize;        /* Size of one sector in bytes, usually 512 */
     uint16_t sectorsPerTrack;   /* CHS: sectors per Track */
-    uint16_t headc;             /* Number of heads */
+    uint16_t headc;             /* CHS: Number of heads */
     uint8_t partc;              /* Number of partitions 1 - 26 */
 }__attribute__((packed))
 PTHeader;
