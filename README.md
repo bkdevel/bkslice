@@ -72,10 +72,10 @@ An parition entry looks like that:
 
 Header flags (PTHeader.flags):
 
-| Bit | Content                                |
-|-----|----------------------------------------|
-| 0   | Set, if the sector adressing is in LBA |
-| 1-7 | Not used yet                           |
+| Bit | Content                                             |
+|-----|-----------------------------------------------------|
+| 0   | Set, if the sector adressing in LBA is not suported |
+| 1-7 | Not used yet                                        |
 
 Entry flags (PTEntry.flags):
 
