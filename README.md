@@ -55,7 +55,7 @@ The PT is exactly 512 bytes big and is structured as following (take a look at p
 | 0x73   | 2B     | PTHeader.sectorSize       | Size of one sector in bytes           |
 | 0x75   | 2B     | PTHeader.sectorsPerTrack  | Number of sectors per Track (CHS)     |
 | 0x77   | 2B     | PTHeader.headc            | Number of heads (CHS)                 |
-| 0x79   | 1B     | PTHeader.partc            | Number of paritions                   |
+| 0x79   | 1B     | PTHeader.partc            | Number of partitions                   |
 | 0x7A   | 15B*26 | PTEntry[26]               | Partition Entry                       |
 
 An parition entry looks like that:
