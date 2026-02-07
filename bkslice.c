@@ -162,7 +162,7 @@ add_entry(char** argv, int argc, int i){
     }
 
     char id = argv[i][0];
-    uint8_t partc = 0, part = 0;
+    uint8_t partc = 1, part = 0;
     bool isFree[26] = {false};
     for(uint8_t x = 0; x < 26; x++){
         if(g_PT.Entry[x].id == id){
