@@ -41,7 +41,7 @@ typedef struct
                                  */ 
     char name[110];             /* Name and description of slice, 110 bytes */
     char null;                  /* Must be 0 */
-    uint8_t flags;              /* Bit 0:       supports lba?
+    uint8_t flags;              /* Bit 0:       doesn't support lba?
                                  * Bit 1 - 7:   not used yet
                                  */
     uint16_t sectorSize;        /* Size of one sector in bytes, usually 512 */
