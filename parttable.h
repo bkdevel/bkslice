@@ -20,8 +20,11 @@
 #pragma once
 
 
-#include <stdbool.h>
-#include <stdint.h>
+#ifdef STULTIX_SRC
+# include <sys/stdint.h.h>
+#else
+# include <stdint.h>
+#endif
 
 
 /*
