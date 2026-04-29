@@ -21,7 +21,7 @@
 
 
 #ifdef STULTIX_SRC
-# include <sys/stdint.h.h>
+# include <sys/stdint.h>
 #else
 # include <stdint.h>
 #endif
