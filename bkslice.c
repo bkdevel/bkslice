@@ -83,16 +83,19 @@ usage(char** argv)
     fprintf(stderr, "\t                   -nolba\t\t Specify that LBA is not supported\n");
     fprintf(stderr, "\t                   -y\t\t\t Don't ask y/n\n");
     fprintf(stderr, "\t--remove-entry     -r [abcde...]\tRemove an entry from the PT\n");
-    fprintf(stderr, "\t--add-entry        -a [abcde...][OPTION] Add an entry to the PT\n");
-    fprintf(stderr, "\t                                type [OS] [FS]  specify type, note hex value expected see parttable.h for resource\n");
-    fprintf(stderr, "\t                                bootable\tSet bootable flag\n");
-    fprintf(stderr, "\t                                readonly\tSet the readonly flag\n");
-    fprintf(stderr, "\t                                root\t\tSpecify partition as /\n");
-    fprintf(stderr, "\t                                rescue\t\tSpecify partition as /rescue\n");
-    fprintf(stderr, "\t                                swap\t\tSpecify paritition as swap\n");
-    fprintf(stderr, "\t                                boot\t\tSpecify partition as /boot\n");
-
-    exit(1);
+    fprintf(stderr, "\t--add-entry        -a [abcde...] [OPTION] Add an entry to the PT\n");
+    fprintf(stderr, "\t                                	type [OS] [FS]  specify type, note hex value expected see parttable.h for resource\n");
+    fprintf(stderr, "\t                                	bootable\tSet bootable flag\n");
+    fprintf(stderr, "\t                                	readonly\tSet the readonly flag\n");
+    fprintf(stderr, "\t                                	root\t\tSpecify partition as /\n");
+    fprintf(stderr, "\t                                	rescue\t\tSpecify partition as /rescue\n");
+    fprintf(stderr, "\t                                	swap\t\tSpecify paritition as swap\n");
+    fprintf(stderr, "\t                                	boot\t\tSpecify partition as /boot\n");
+	fprintf(stderr, "\t								   	lba\t\tSet starting LBA of partition\n");
+	fprintf(stderr, "\t								   	chs\t\tSet starting CHS of partition\n");
+	fprintf(stderr, "\t									size\t\tSpecify size of partition in sectors\n");
+	    
+	exit(1);
 
 }
 
